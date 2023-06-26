@@ -15,17 +15,15 @@ router.get("/", (req, res) =>{
 router.post('/upload', upload.single('file'), (req, res) => {
 
   const file = req.file;
-  console.log("File: ", file); 
   const fileBuffer = fs.readFileSync(file.path);     
   const int8Array = new Int8Array(fileBuffer);
 
   verify(int8Array, process.env.NODE_URL)
   .then((res1) => {
-    console.log(res1);
-    return  res.status(200).send("success");
+    return  res.status(200).send(res1);
   })
   .catch((err) => {
-    console.error("test", err.message); 
+    // raise
   });
 
   fs.unlinkSync(file.path);
