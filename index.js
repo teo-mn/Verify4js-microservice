@@ -16,7 +16,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = path.resolve(
 
 
 app.listen(port, ()=> { 
-    console.log("Server aslaa");
+    console.log("Server is running");
 })
 
 app.use("/", router);
