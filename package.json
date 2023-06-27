@@ -18,7 +18,7 @@
     "pdfjs-dist": "^3.7.107",
     "promise.allsettled": "^1.0.6",
     "text-encoding": "^0.7.0",
-    "verify4js": "^1.0.3",
+    "verify4js": "^1.0.4",
     "yachu2002": "^2.1.1",
     "yachu2003": "^2.2.21"
   }
